@@ -1,0 +1,364 @@
+<html>
+    <head> 
+        <title>Tablas en Html</title>
+        <link rel="stylesheet" href="../ccs/style.page.css" type="text/css">
+        <style type="text/css">
+            #tabla_uno{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #855E6E;
+                border-style: solid;
+                border-color: #CE7095;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            #tabla_uno th{
+                background-color: #FFB2C1;
+                    }
+            #tabla_uno td{
+                background-color: #FFDBD7;
+                text-align: left;
+                border-style: solid;
+                border-color: #CE7095;
+                border-top-width: 3px;
+                border-radius: 5px;
+                margin: 10px;
+            }
+            /*#tabla_2{
+                color: saddlebrown;
+            }
+            #tabla_2 td{
+                color: #CE7095;
+                height: 50px;
+                padding: 5px;
+            }*/
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #F7F1E1;
+            }
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                border-style: solid;
+                margin: 0 auto;
+            }
+            .tabla_dos td, .tabla_dos th {
+                /*width: 150px;*/
+                padding: 10px;
+                border-style: dashed;
+            }
+            .tabla_dos th{
+                border-style: dashed;
+            }
+            .tabla_dos td{
+                background-color: #FFDBD7;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                
+            }
+            #tabla_zebra{
+                width: 100%;
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color: #FFDBD7;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #FFB2C1;
+            }
+            #tabla_zebra thead tr{
+                background-color: #855E6E;
+            }
+            #tabla_cuatro{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #855E6E;
+                border-style: solid;
+                border-color: #CE7095;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            
+            .tabla_hover{
+                width: 80%;
+            }
+            .tabla_hover tr:hover{
+                background-color: #FFB2C1;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>TABLAS EN HTML</h1>
+    </header>
+    <nav>
+        <ul>  
+            <li><a href="../html/miprimeraweb.html">Inicio</a></li>
+            <li><a href="../html/listas2.html">Lista</a></li>
+            <li><a href="../html/enlaces2.html">Enlaces</a></li>
+            <li><a href="../html/imagenes.html">Imagen</a></li>
+            <li><a href="../html/audio.html">Audio</a></li>
+            <li><a href="../html/video.html">Video</a></li>
+            <li><a href="../html/tablass.html.pdf">Tablas</a></li>
+            <li><a href="#">Formularios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section style="overflow-x: auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dictum metus. Aenean sodales sit amet turpis eu semper. Proin ac tortor et dolor pulvinar dictum vel vel tellus. Vestibulum magna massa, egestas vitae imperdiet vel, euismod vel libero. Nulla facilisi. Sed lacinia facilisis diam sed scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut tristique ligula.</p>
+                <table border="1" id="tabla_uno">
+                    <thead>
+                        <tr>
+                            <th>Matricula</th>
+                            <th>Nombre</th>
+                            <th> Apellido paterno</th>
+                            <th> Apellido materno</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202156383</td>
+                            <td>Jose Luis</td>
+                            <td>Torres</td>
+                            <td>Diaz</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202033479</td>
+                            <td>Maria Fernanda</td>
+                            <td>Dominguez</td>
+                            <td>Gonzalez</td>
+                            <td>Grafico</td>
+                        </tr>
+                        <tr>
+                            <td>202247698</td>
+                            <td>Ximena</td>
+                            <td>Pereces</td>
+                            <td>Salazar</td>
+                            <td>Urbano</td>
+                        </tr>
+                        <tr>
+                            <td>202134568</td>
+                            <td>Mateo</td>
+                            <td>Dominguez</td>
+                            <td>Cruz</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202033476</td>
+                            <td>Aurora</td>
+                            <td>Gonzalez</td>
+                            <td>Cruz</td>
+                            <td>Grafico</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+        </section>
+        <section style="overflow-x: auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dictum metus. Aenean sodales sit amet turpis eu semper. Proin ac tortor et dolor pulvinar dictum vel vel tellus. Vestibulum magna massa, egestas vitae imperdiet vel, euismod vel libero. Nulla facilisi. Sed lacinia facilisis diam sed scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut tristique ligula.</p>
+                <table id="tabla_2" class="tabla_dos" >
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;  background-color: #855E6E;">Nombre</th>
+                            <th style="width: 100px;  background-color: #855E6E;">Edad</th>
+                            <th style="width: 200px;  background-color: #855E6E;" colspan="2">Telefono</th>
+                            <th style="width: 100px;  background-color: #855E6E;">Cooperacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Georgina Lopez Mendoza</td>
+                            <td style="text-align:center; padding: 0px;">15</td>
+                            <td>2222329634</td>
+                            <td>2222329634</td>
+                            <td class="celda_centrada">100</td>
+                        </tr>
+                        <tr>
+                            <td>Juan Martinez Gonzalez</td>
+                            <td style="text-align:center; padding: 0px;">14</td>
+                            <td>2229632733</td>
+                            <td>2222329634</td>
+                            <td style="text-align: center; padding:opx;
+                                       background-color: ">50</td>
+                        </tr>
+                        <tr>
+                            <td>Maria del Carmen Hernandez Perez</td>
+                            <td style="text-align:center; padding: 0px;">13</td>
+                            <td>2225678908</td>
+                            <td>2222329634</td>
+                            <td class="celda_centrada">150</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Juarez Lopez</td>
+                            <td style="text-align:center; padding: 0px;">14</td>
+                            <td>222560998</td>
+                            <td>2222329634</td>
+                            <td class="celda_centrada">80</td>
+                        </tr>
+                        <tr>
+                            <td>Aaron Suarez Mejia</td>
+                            <td style="text-align:center; padding: 0px;">13</td>
+                            <td>2223489065</td>
+                            <td>2222329634</td>
+                            <td class="celda_centrada">100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td class="celda_centrada" style="background-color: #855E6E; color: aliceblue; ">480</td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </section>
+        <section>
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dictum metus. Aenean sodales sit amet turpis eu semper. Proin ac tortor et dolor pulvinar dictum vel vel tellus. Vestibulum magna massa, egestas vitae imperdiet vel, euismod vel libero. Nulla facilisi. Sed lacinia facilisis diam sed scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut tristique ligula.</p>
+            <table id="tabla_zebra">
+                <thead>
+                    <tr>
+                        <th>Nombre </th>
+                        <th>Edad </th>
+                        <th>Deporte</th>
+                        <th> Telefono</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Lourdes DIaz Salamanca</td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>2224657890</td>
+                        <td>lulu.diaz@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Jose perez polisom</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>222987640</td>
+                        <td>jose.perez@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Luis Hernnadez Ramirez/td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>2229055991</td>
+                        <td>luis_her@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Maria Gonzalez Gonzalez</td>
+                        <td>20</td>
+                        <td>Natacion</td>
+                        <td>222987534</td>
+                        <td>mari.gon@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Pepe Perez Ignacio</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>2229809834</td>
+                        <td>pep.pp@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Jorge Gonzalez Gonzalez</td>
+                        <td>21</td>
+                        <td>Natacion</td>
+                        <td>222989087</td>
+                        <td>jorge_hrd@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Monse Camacgo Perez</td>
+                        <td>20</td>
+                        <td>Karate</td>
+                        <td>2229765390</td>
+                        <td>mon.pp@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+            <section>
+                <h2>Tabla</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dictum metus. Aenean sodales sit amet turpis eu semper. Proin ac tortor et dolor pulvinar dictum vel vel tellus. Vestibulum magna massa, egestas vitae imperdiet vel, euismod vel libero. Nulla facilisi. Sed lacinia facilisis diam sed scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut tristique ligula.</p>
+                <table id="tabla_cuatro" class="tabla_hover">
+                <thead>
+                    <tr>
+                        <th>Nombre </th>
+                        <th>Edad </th>
+                        <th>Deporte</th>
+                        <th> Telefono</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Lourdes DIaz Salamanca</td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>2224657890</td>
+                        <td>lulu.diaz@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Jose perez polisom</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>222987640</td>
+                        <td>jose.perez@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Luis Hernnadez Ramirez/td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>2229055991</td>
+                        <td>luis_her@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Maria Gonzalez Gonzalez</td>
+                        <td>20</td>
+                        <td>Natacion</td>
+                        <td>222987534</td>
+                        <td>mari.gon@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Pepe Perez Ignacio</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>2229809834</td>
+                        <td>pep.pp@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Jorge Gonzalez Gonzalez</td>
+                        <td>21</td>
+                        <td>Natacion</td>
+                        <td>222989087</td>
+                        <td>jorge_hrd@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td> Monse Camacgo Perez</td>
+                        <td>20</td>
+                        <td>Karate</td>
+                        <td>2229765390</td>
+                        <td>mon.pp@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+            
+    </main>
+        <footer>
+            <h5> Elaborado por Karla Paola</h5>
+    </footer>
+    </body>
+
+</html>

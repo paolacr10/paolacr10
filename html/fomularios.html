@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios HTML</title>
+<link href="../ccs/style.page.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			width: 40%;
+			height: auto;
+			padding: 30px;
+			background-color: lightpink;
+			color: maroon;
+			margin: 0 auto;
+		}
+		label{
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+		label, input{
+			display: block;
+			margin: 10px;
+		}
+		input[type=text],input[type=password]{
+			width: 100%;
+			color: gray;
+			padding: 8px;
+			font-weight: bold;
+			border: 2px solid hotpink;
+			border-radius: 6px;
+			background-color: blanchedalmond;
+		}
+		input[type=submit]{
+			width: 20%;
+			background-color: hotpink;
+			padding: 10px;
+			margin: 20px auto;
+			border-radius: 6px;
+			color: aliceblue;
+			font: bolder;
+		}
+		input[type=text]:focus, input[type=password]:Focus{
+			background-color: lemonchiffon;
+			border: 3px solid hotpink;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+  <h1>FORMULARIOS EN HTML</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="../html/listas2.html">Listas</a></li>
+		<li><a href="../html/tablass.html">Tablas</a></li>
+		<li><a href="../html/enlaces2.html">Enlaces</a></li>
+		<li><a href="../html/imagenes.html">Imagenes</a></li>
+		<li><a href="../html/audio.html">Audio</a></li>
+		<li><a href="../html/video.html">Video</a></li>
+		<li><a href="../html/fomularios.html">Formulario</a></li>
+	</ul>
+</nav>
+<main>
+  <section>
+    <h2>FORMULARIO DE USUARIO 1 </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusantium earum neque, quo rem tempora fuga aspernatur architecto mollitia? Necessitatibus sequi repudiandae eius porro minima tempore, reiciendis ipsum eaque. Eum iste consectetur dignissimos doloribus, autem similique repellendus distinctio porro ducimus totam, enim ut nam nobis quae tempore mollitia. Officiis voluptatem, accusamus qui. Mollitia deserunt nesciunt officiis autem nisi quam, recusandae, harum provident accusantium neque? Est, molestiae laudantium pariatur beatae blanditiis harum nam debitis id veniam repudiandae non ullam accusantium minima soluta neque vitae repellat eligendi aspernatur. Vitae obcaecati, sequi iure commodi ad libero. Labore voluptatum distinctio, repellendus at accusamus mollitia?</p>
+	<form action="" method="get">
+		<label id="">Nombre:</label>
+		<input type="text" id="nombre" name="nombre">
+		<label id="">Contraseña:</label>
+		<input type="password" id="contrasena" name="contrasena">
+		<input type="submit" value="Enviar"
+	</form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quis quia consequatur incidunt quod magni natus quo modi repellendus beatae! Architecto itaque praesentium eos distinctio quam perspiciatis alias quisquam laborum asperiores natus commodi porro, doloremque ad expedita iste possimus consectetur voluptate ipsum ducimus, nemo dolorem voluptatibus provident dolor obcaecati. Earum voluptas id vitae quia tempore veniam, iusto dolorem neque blanditiis dolor doloribus voluptatum ducimus, eos nulla impedit odio aspernatur accusantium rem atque eaque incidunt quisquam officia tenetur harum, ipsam. Iste quibusdam maiores impedit voluptatibus dolores id, sunt accusantium qui veniam accusamus autem earum, necessitatibus, optio velit assumenda, voluptates reprehenderit?</p>
+    
+	<form id="form1" name="form1" method="post">
+	  <label for="textfield">Nombre:</label>
+	  <input type="text" name="nombre" id="nombre">
+	  
+	
+     </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repudiandae aliquam ad, quisquam aliquid non. Est possimus provident dolor iste ab, repellat tenetur quia laudantium maxime amet sunt ipsa suscipit ut voluptates omnis ad unde saepe nisi reprehenderit quidem, libero, non facere? Repudiandae vel necessitatibus vero nostrum non nemo tenetur omnis ipsum praesentium voluptatibus. Commodi, quae. Vero non, porro cum dignissimos, doloremque culpa ratione, molestiae dolorem rerum dolores nihil! Nam nulla libero quos, adipisci minus assumenda, eligendi quidem doloribus cumque numquam excepturi magni dignissimos provident mollitia similique illum. Adipisci, quos? Pariatur aliquam officia modi quisquam asperiores explicabo, consequuntur dolore, ad.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="textfield">Text Field:</label>
+      <input type="text" name="textfield" id="textfield">
+		<label for="Genero">Genero:</label>
+      <table border="width" style="width: 40%;">
+        <tr>
+		<td style="text-align: center"><input type="radio" name="Genero" value="opción" id="Genero_0"></td>
+        <td><label>Femenino</label></td>
+		
+        </tr>
+        <tr>
+			<td style="text-align: center"><input type="radio" name="Genero" value="opción" id="Genero_1"></td>
+          <td><label>masculino</label></td>
+		
+        </tr>
+        <tr>
+			<td style="text-align: center"><input type="radio" name="Genero" value="opción" id="Genero_2"></td>
+          <td><label>otro</label></td>
+		
+        </tr>
+      </table>
+	<label for="Musica">¿Cual es tu genero musical favorito?</label>
+     
+    </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis inventore, a. Quod sunt et maxime, quaerat neque eaque deserunt, pariatur doloribus inventore deleniti omnis, quos est esse ducimus placeat molestias iusto consequatur rerum maiores suscipit reiciendis repellendus! Magnam velit laboriosam at quod, odit provident quasi iusto eos ipsam est, quam fugiat quia rem eius in sint ullam reiciendis incidunt. Ducimus quam sed impedit, ad eos veritatis soluta accusantium odit provident aliquam asperiores, obcaecati qui. Necessitatibus impedit ut non enim labore ipsum qui suscipit hic accusamus, corporis odio neque facere delectus inventore quisquam repudiandae, omnis saepe. Sequi iure, eum ipsa cumque.</p>
+  </section>
+Colocar aquí el contenido de la nueva etiqueta main</main>
+<footer>
+<h5>Elaborado por Karla Paola Cuellar Cruz</h5></footer>
+</body>
+</html>
